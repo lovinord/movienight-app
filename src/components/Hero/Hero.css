@@ -1,0 +1,61 @@
+.heroWrapper {
+  background-color: #00001a;
+  height: 30vh;
+}
+.heroText {
+  padding: 4rem 1rem 0rem 1rem;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #fe019a,
+    0 0 82px #fe019a, 0 0 92px #fe019a, 0 0 102px #fe019a, 0 0 151px #fe019a;
+  letter-spacing: 5px;
+}
+
+.taglineContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tagline {
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  letter-spacing: 1.4px;
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #fe019a,
+    0 0 82px #fe019a, 0 0 92px #fe019a, 0 0 102px #fe019a, 0 0 151px #fe019a;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .heroWrapper {
+    height: 50vh;
+  }
+  .heroText {
+    padding-top: 9rem;
+    font-size: 4.5rem;
+    letter-spacing: 8px;
+  }
+  .tagline {
+    padding-top: 2.5rem;
+    font-size: 1.3rem;
+    letter-spacing: 4px;
+  }
+}
+@media only screen  and (min-width : 1224px) {
+  .heroWrapper {
+    height: 65vh;
+  }
+  .heroText {
+    padding-top: 13rem;
+    font-size: 4.5rem;
+    letter-spacing: 8px;
+  }
+  .tagline {
+    padding-top: 2.5rem;
+    font-size: 1.3rem;
+    letter-spacing: 4px;
+  }
+}
+

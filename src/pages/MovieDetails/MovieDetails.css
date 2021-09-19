@@ -1,0 +1,126 @@
+.movieDetailsSection {
+  color: #fe019a;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  width: 99%;
+  margin: 0 auto;
+}
+.movieDetailsItems {
+  display: flex;
+  flex-direction: column;
+  width: 98%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.movieDetailsH1 {
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  padding-bottom: 0.4rem;
+}
+.movieDetailsP {
+  font-size: 1.1rem;
+  padding-bottom: 1rem;
+}
+.movieDetailsPoster {
+  width: 98%;
+  height: auto;
+  padding-bottom: 1.2rem;
+  border-radius: 20px;
+}
+.castH2 {
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 15px;
+}
+.movieCastList {
+  display: flex;
+  flex-wrap: wrap;
+}
+.actorItem {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+  margin-bottom: 1rem;
+  flex: 50%;
+  text-align: center;
+}
+.actorPoster {
+  width: 110px;
+  border-radius: 7px;
+}
+
+.actorName {
+  font-size: 0.8rem;
+  padding: 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .movieDetailsFlex {
+    display: flex;
+    align-content: space-between;
+  }
+  .movieDetailsSection {
+    width: 85%;
+  }
+  .movieDetailsH1 {
+    font-size: 1.6rem;
+    letter-spacing: 3px;
+    padding-bottom: 0.4rem;
+  }
+  .movieDetailsP {
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+  }
+  .movieDetailsPoster {
+    width: 40%;
+    margin-right: 20px;
+  }
+  .castH2 {
+    margin-top: 2rem;
+    letter-spacing: 4px;
+    font-size: 2rem;
+  }
+  .movieCastList {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .actorItem {
+    flex: 33%;
+  }
+  .actorPoster {
+    width: 150px;
+  }
+ 
+  .actorName {
+    font-size: 1.1rem;
+    padding: 10px;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1224px) {
+
+  .movieDetailsSection {
+    width: 55%;
+  }
+  .movieDetailsH1 {
+    font-size: 1.8rem;
+  }
+
+  .movieDetailsPoster {
+    width: 30%;
+    margin-right: 30px;
+  }
+  .actorItem {
+    flex: 20%;
+  }
+  .actorPoster {
+    width: 150px;
+  }
+}

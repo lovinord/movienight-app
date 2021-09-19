@@ -1,0 +1,50 @@
+.latestMoviesSection {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.latestMoviesH2 {
+  color: #fe019a;
+  text-align: center;
+  font-size: 1.4rem;
+  letter-spacing: 3px;
+}
+
+.latestMoviesItems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .latestMoviesSection {
+    margin-top: 4rem;
+  }
+
+  .latestMoviesH2 {
+    font-size: 2rem;
+    letter-spacing: 6px;
+    padding: 1rem;
+  }
+  .latestMoviesItems {
+    flex: 33%;
+  }
+
+}
+@media only screen and (min-width: 1224px) {
+  .latestMoviesSection {
+    margin-top: 4rem;
+    width: 70%;
+  }
+
+  .latestMoviesH2 {
+    font-size: 2rem;
+    letter-spacing: 6px;
+    padding: 2rem;
+  }
+  .latestMoviesItems {
+    flex: 20%;
+  }
+}

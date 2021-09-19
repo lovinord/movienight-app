@@ -1,0 +1,64 @@
+.movieCardArticle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.4rem;
+  padding: 0.3rem;
+  border-radius: 10px;
+  border: #fe019a solid;
+  border-width: 1.6px;
+  letter-spacing: 3px;
+  cursor: pointer;
+  transition: 0.5s;
+  width: 170px;
+  height: 280px;
+  text-decoration: none;
+}
+.movieCardArticle:hover {
+  box-shadow: 0 0 2px #fff, 0 0 3px #fff, 0 0 8px #fff, 0 0 10px #fe019a,
+    0 0 22px #fe019a, 0 0 32px #fe019a, 0 0 22px #fe019a, 0 0 21px #fe019a;
+  text-decoration: none !important;
+}
+
+.firstPoster {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: contain;
+}
+.movieCardTitle {
+  color: #fe019a;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  padding: 5px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+@media only screen and (min-width: 768px) {
+  .movieCardArticle {
+    margin: 0.8rem;
+    padding: 0.5rem;
+    border-width: 2px;
+    letter-spacing: 4px;
+    width: 200px;
+    height: 390px;
+  }
+
+  .movieCardTitle {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (min-width: 1224px) {
+  .movieCardArticle {
+    width: 220px;
+    height: 390px;
+  }
+
+  .movieCardTitle {
+    font-size: 1.1rem;
+  }
+}
