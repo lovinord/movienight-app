@@ -58,7 +58,7 @@ export const getTopMovies = async () => {
   );
 };
 
-export default {
+const apiQueryObject = {
   getMovieGenres,
   getLatestMovies,
   getMovieDetails,
@@ -68,4 +68,6 @@ export default {
   getMovieCredits,
   getMovieByActorId,
   getTopMovies,
-};
+}
+
+export default apiQueryObject;
