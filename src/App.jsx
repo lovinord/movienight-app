@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar/Navbar";
 import AllMovies from "./pages/AllMovies/AllMovies";
 import Error from "./components/Error/Error";
 import MovieDetails from "./pages/MovieDetails/MovieDetails";
-import ActorPage from "./pages/ActorPage/Actor"
+import ActorPage from "./pages/ActorPage/Actor";
 
 const queryClient = new QueryClient();
 
@@ -20,10 +20,10 @@ const App = () => {
             <Route exact path="/">
               <Home />
             </Route>
-            <Route path="/movies/:id">
+            <Route path="/movie/:id">
               <MovieDetails />
             </Route>
-            <Route path="/movies">
+            <Route path="/movies/:genre?/:genreId?">
               <AllMovies />
             </Route>
             <Route path="/actor/:id">

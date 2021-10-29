@@ -8,7 +8,7 @@ import "../LatestMovies/LatestMovies.css";
 const FilteredMovies = ({ genreId }) => {
   const [page, setPage] = React.useState(1);
   const { data, isPreviousData } = useQuery(
-    ["getMoviesWithGenre", page],
+    ["getMoviesWithGenre", page, genreId],
     () => getMoviesWithGenres(genreId, page),
     {
       keepPreviousData: true,

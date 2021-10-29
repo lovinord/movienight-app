@@ -24,7 +24,7 @@ const PopularMovies = () => {
           <Carousel interval={5000} controls={false} fade={true}>
             {data.results.slice(0, 10).map((movie) => (
               <Carousel.Item key={movie.id}>
-                <Link to={`/movies/${movie.id}`}>
+                <Link to={`/movie/${movie.id}`}>
                   <img
                     className="d-block w-100"
                     src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}

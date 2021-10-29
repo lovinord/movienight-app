@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const MovieCard = (props) => {
   return (
-    <Link to={`/movies/${props.id}`}>
+    <Link to={`/movie/${props.id}`}>
       <article
         className="movieCardArticle"
         style={{ color: "#fe019a", cursor: "pointer" }}
