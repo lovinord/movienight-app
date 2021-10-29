@@ -6,7 +6,8 @@ import { getMovieGenres } from "../../Services/API";
 import FilteredMovies from "../../components/FilteredMovies/FilteredMovies";
 
 const AllMovies = () => {
-  let { genreId } = useParams();
+  let { genreId, genreName, genrePage } = useParams();
+
   const [selectedGenre, setSelectedGenre] = useState({
     id: genreId,
   });
@@ -24,7 +25,7 @@ const AllMovies = () => {
 
   const handleBtnClick = async (genre) => {
     setSelectedGenre(genre);
-    history.push(`/movies/${genre.name}/${genre.id}`);
+    history.push(`/movies/${genre.name}/${genre.id}/1`);
   };
 
   return (
@@ -42,7 +43,7 @@ const AllMovies = () => {
           </div>
           <hr></hr>
           {selectedGenre && (
-            <FilteredMovies genreId={genreId} />
+            <FilteredMovies genreId={genreId} genreName={genreName} genrePage={genrePage} />
           )}
         </>
       )}

@@ -23,7 +23,7 @@ const App = () => {
             <Route path="/movie/:id">
               <MovieDetails />
             </Route>
-            <Route path="/movies/:genre?/:genreId?">
+            <Route path="/movies/:genreName?/:genreId?/:genrePage?">
               <AllMovies />
             </Route>
             <Route path="/actor/:id">
